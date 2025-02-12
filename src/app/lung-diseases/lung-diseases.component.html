@@ -1,0 +1,14 @@
+<div class="premium">
+    <div class="premium-section">
+      <p class = "heading"><i>Types Of Lung Diseases</i></p>
+    </div>
+  
+    <div class = "courses">
+      <div class = "course-card" *ngFor = "let disease of diseases">
+        <img [src] = "disease.imagePath" [alt] = "disease.name" />
+        <h3>{{ disease.name }}</h3>
+        <button (click) = "goToDetails(disease.id)">Know More</button>
+      </div>
+    </div>
+  </div>
+  

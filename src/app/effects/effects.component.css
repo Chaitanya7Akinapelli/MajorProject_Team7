@@ -1,0 +1,52 @@
+.effects-container {
+    padding-top: 5%;
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 33px;
+    font-weight:600;
+    color: black; /* Blue color from previous components */
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .effect-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 10px;
+  }
+  
+  .effect-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .effect-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1470fa; /* Blue color for consistency */
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    color: #ff1605;
+    font-weight: 600;
+  }
+  
+  .effect-description {
+    max-width: 80%;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  

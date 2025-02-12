@@ -1,0 +1,18 @@
+<p class="heading"><i>Make Your Predictions here</i></p>
+<div class="prediction">
+  <img src="./assets/logo-image1.jpg" class="main-image" />
+  <div class="upload-container">
+    <!-- Custom File Upload Button -->
+    <label class="custom-file-label">
+      <input type = "file" (change)= "onFileSelect($event)" class = "file-input" />
+    </label>
+    <!-- Preview Section -->
+    <div *ngIf = "previewUrl" class = "image-preview-container">
+      <img [src] = "previewUrl" alt = "Image Preview" class = "image-preview" />
+    </div>
+    <button (click) = "onUpload()" class = "upload-button" [disabled] = "!selectedFile">Predict</button>
+    <div *ngIf = "message" class="message-container">
+      <p class = "upload-message">{{ message }}</p>
+    </div>
+  </div>
+</div>

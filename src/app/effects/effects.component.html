@@ -1,0 +1,13 @@
+<div class="effects-container">
+    <h2 class="title"><i>Effects of Lung Diseases</i></h2>
+    <div *ngFor = "let effect of effects" class ="effect-item">
+      <div class = "effect-header" (click) = "toggleEffect(effect)">
+        <span class = "effect-title">{{ effect.title }}</span>
+        <span class = "toggle-icon">{{ effect.isExpanded ? '-' : '+' }}</span>
+      </div>
+      <div *ngIf = "effect.isExpanded" class = "effect-description">
+        {{ effect.description }}
+      </div>
+    </div>
+  </div>
+  

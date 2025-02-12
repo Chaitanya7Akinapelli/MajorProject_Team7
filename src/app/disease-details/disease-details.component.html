@@ -1,0 +1,17 @@
+<div class="disease-details" *ngIf="disease">
+    <h1>{{ disease.name }}</h1>
+    <img [src]="disease.img" [alt]="disease.name" class="disease-image" />
+    <!-- Subimages Section -->
+     <h3>X-rays of {{ disease.name }} looks like below</h3>
+    <div class="subimages-container">
+        <img 
+            *ngFor="let subimage of getSubimages(disease.subimages)" 
+            [src]="subimage" 
+            [alt]="disease.name + ' subimage'" 
+            class="subimage"
+        />
+    </div>
+    <p>{{ disease.description }}</p>
+    <h3>Role of Deep Learning</h3>
+    <p>{{ disease.deeplearningrole }}</p>
+</div>
